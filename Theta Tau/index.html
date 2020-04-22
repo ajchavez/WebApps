@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+</html>
+<head>
+    <script type='text/javascript'>
+
+    window.onload = function(){
+        if( window.localStorage ){
+            if( !localStorage.getItem('firstLoad') ){
+                localStorage['firstLoad'] = true;
+                window.location.reload();
+            }  
+            else
+                localStorage.removeItem('firstLoad');
+        }
+    };
+
+</script>
+    <title>Theta Tau</title>
+    <meta name="description" content="Theta Tau's Beta Chapter was founded in 1908 at Michigan Technological University."/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://beardeddragonclub.com/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="headFoot.css">
+    <link rel="stylesheet" href="home.css"/>
+</head>
+<body>
+    
+    <div id = navBar>
+        <div id = logo>
+            <a href = "index.html"><img src = "img/logo.png"></a>
+        </div>
+        <div id = menu onclick="changeMenu(this)">
+            <div id = "bar1" class = "menu"></div>
+            <div id = "bar2" class = "menu"></div>
+            <div id = "bar3" class = "menu"></div>
+        </div>
+        <ul id = "navTab">
+            <li><a href="about.asp">Contact</a></li>
+            <li><a href="about.asp">Pig Roast</a></li>
+            <li><a href="winterCarnival.html">Winter Carnival Statues</a></li>
+            <li><a href="news.asp">About</a></li>  
+        </ul>
+    </div>
+    <div id= "dropdown" style="display:none;">
+        <a href="#about">About</a>
+        <a href="winterCarnival.html">Winter Carnival Statues</a>  
+        <a href="#pig">Pig Roast</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div>
+        <div id = "displayImg">
+            <img src = "img/cops2.png">
+        </div>
+        <div id = "beta">
+            <img src = "img/crest.png">
+            <h3>THETA TAU</h3>
+            <h4>PROFESSIONAL ENGINEERING FRATERNITY</h4>
+        </div>
+    </div>
+    
+    
+    <div id = container>
+    <div id = maxWidth>
+    <div class = topics>
+        <h1>Brotherhood</h1>
+    </div>
+    <div class = holder>
+        
+        <div class = "left">
+            
+            <p>Create a strong and lasting bond of fraternal friendship</p>
+        </div>
+        <div class = "right">
+            <div id = "contentImg">
+                <img src = "img/046.png">
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class = topics>
+        <h1>Service</h1>
+    </div>
+    <div id= "service" class = holder>
+        <div id = "left">
+            <div id = "contentImg">
+                <img src = "img/woodChopping.jpg">
+            </div>
+        </div>
+        <div id = "right">
+            
+            <p>Become a part of the community by making a difference in it</p>
+        </div>
+        
+    </div>
+    
+    
+    <div class = topics>
+        <h1>Profession</h1>
+    </div>
+    <div class = holder>
+        
+        <div class = "left">
+            
+            <p>Prepare for success both in the class room and beyond</p>
+        </div>
+        <div class = "right">
+            <div id = "contentImg">
+                <img src = "img/mtu8.jpg">
+            </div>
+        </div>
+    </div>
+        
+    </div>
+    </div>
+    <footer>
+        <div>
+            <img src = "img/MaroonCrest.jpg">
+        </div>
+    </footer>
+    </div>
+    
+</body>
+<script type="text/javascript" src = "scripts/home.js"></script>            
