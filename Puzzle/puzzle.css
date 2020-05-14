@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding:0;
+    height: 100vh;
+    overflow:hidden;
+    background-color: #b7ccdf;
+}
+.drag{
+    position: absolute;
+}
+.drag img{
+    overflow:hidden;
+}
+.front{
+    z-index:100;
+}
+#screen {
+    width:95%;
+    height:95%;
+    margin-top:2.5%;
+    margin-left:2.5%;
+    
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#screen img{
+    position:fixed;
+    width:75vw;
+    max-width: 50vh;
+    height:75vw;
+    max-height: 50vh;
+}
+#area{
+    position:fixed;
+    width:75vw;
+    max-width: 50vh;
+    height:75vw;
+    max-height: 50vh;
+    /*left:calc((100% - 50vh)/2);
+    top:25vh;*/
+    border-style: solid;
+}
+#area img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    z-index:0;
+}
+button{
+    position:absolute;
+    width: 50vh;
+    height: 15vh;
+    left:calc((100% - 50vh)/2);
+    font-size:50px;
+    bottom:5vh;
+}
+#image{
+    height:100px;
+    width:100px;
+}
